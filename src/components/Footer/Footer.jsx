@@ -1,4 +1,3 @@
-import React from "react";
 import './Footer.css'
 
 const Footer = () => {
@@ -6,7 +5,7 @@ const Footer = () => {
     <>
       <div
         className="text-center p-3 divFooter"
-        style={{ backgroundColor: "rgb(33,37,41", color: "white" }}
+        style={{ backgroundColor: "rgb(33,37,41)", color: "white" }}
       >
         &copy; {new Date().getFullYear()} Copyright: Bruno Roma
   

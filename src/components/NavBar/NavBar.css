@@ -1,0 +1,12 @@
+.contenedor {
+    font-size: 2rem;
+}
+
+.navLink {
+    text-decoration: none;
+    color: white;
+}
+
+.navLink:hover {
+    color: red
+}
