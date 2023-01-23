@@ -1,31 +1,26 @@
 import React from "react";
-import Container from "react-bootstrap/Container";
-import Navbar from "react-bootstrap/Navbar";
+import { useState } from "react";
+import { Navbar, NavbarToggler, Collapse, Nav, NavItem } from 'reactstrap';
 import { NavLink } from "react-router-dom";
-import { Stack } from "react-bootstrap";
 import './NavBar.css'
 
 const NavBar = () => {
-  const secciones = ["Sobre Mi", "Portfolio", "Contacto"];
+  const secciones = ["Sobre Mi", "Portfolio"];
 
+  const [isOpen, setIsOpen] = useState(false);
 
+  const toggle = () => setIsOpen(!isOpen);
 
   return (
-    <>
-      <Navbar bg="dark" variant="dark">
-        <Container className="contenedor">
-          <>
-            <h1>
-              <NavLink className='navLink' to={"/"}>
-                BrunoR Dev
-              </NavLink>
-            </h1>
-          </>
-          <>
-            <Stack direction="horizontal" gap={5}>
-              {secciones.map((e) => (
+    <Navbar color="dark" light expand="md" className="contenedor">
+      <NavLink to={"/"} className='navLink'><h1>BrunoR Dev</h1></NavLink>
+      <NavbarToggler onClick={toggle} />
+      <Collapse isOpen={isOpen} navbar className="justify-content-md-end">
+        <Nav className="ml-auto" navbar>
+          <NavItem>
+          {secciones.map((e) => (
                 <NavLink
-                  className='navLink'
+                  className='navLink ms-3'
 
                   key={e}
                   to={`/${e.toLowerCase().split(" ").join("")}`}
@@ -33,12 +28,11 @@ const NavBar = () => {
                   {e}
                 </NavLink>
               ))}
-            </Stack>
-          </>
-        </Container>
-      </Navbar>
-    </>
+          </NavItem>
+        </Nav>
+      </Collapse>
+    </Navbar>
   );
-};
+}
 
 export default NavBar;

@@ -5,8 +5,7 @@ import NavBar from "./components/NavBar/NavBar";
 import Footer from "./components/Footer/Footer";
 import Inicio from "./components/Inicio/Inicio";
 import SobreMi from "./components/SobreMi/SobreMi";
-import Proyectos from "./components/Portfolio/Portfolio";
-import Contacto from "./components/Contacto/Contacto";
+import Portfolio from "./components/Portfolio/Portfolio";
 
 function App() {
   return (
@@ -14,18 +13,14 @@ function App() {
       <BrowserRouter>
         <NavBar />
           <Routes>
-            <Route path="/" element={<Inicio greeting={"Mi Portfolio"} />} />
+            <Route path="/" element={<Inicio />} />
             <Route
               path="/sobremi"
               element={<SobreMi greeting={"Sobre Mi"} />}
             />
             <Route
               path="/portfolio"
-              element={<Proyectos greeting={"Portfolio"} />}
-            />
-            <Route
-              path="/contacto"
-              element={<Contacto greeting={"Contacto"} />}
+              element={<Portfolio greeting={"Portfolio"} />}
             />
             <Route path="*" element={<h1>Pagina No Encontrada</h1>} />
           </Routes>

@@ -1,17 +1,23 @@
+import Tarjeta from '../Tarjetas/Tarjeta'
 import './Portfolio.css'
-import data from '../Data/data.js'
+import React, { useState, useEffect } from 'react';
+import dataProyectos from '../Data/data.js'
+import { Container } from 'react-bootstrap';
 
-const Proyectos = async ({greeting}) => {
+const Portfolio = ({greeting}) => {
+  const [proyectos, setProyectos] = useState([]); // Inicializando el estado
 
-  let response = await fetch('data.js')
-  let data = await response.json()
-  let proyectos = data;
-
-  console.log(proyectos)
+  useEffect(() => {
+      setProyectos(dataProyectos);
+  }, []);
 
   return (
-    <div className='divPortfolio'><h1>{greeting}</h1></div>
-  )
+    <Container>
+      <div><h1>{greeting}</h1>
+      </div>
+    <Tarjeta info={proyectos}/>
+    </Container>
+  );
 }
 
-export default Proyectos
+export default Portfolio

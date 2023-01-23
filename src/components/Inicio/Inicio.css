@@ -3,18 +3,55 @@
     font-weight: bold;
 }
 
+body {
+        background-color: rgb(33,37,41);
+}
 
-.contenedorInicio {
+.contenedorGralInicio {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
     align-items: center;
+    color: white
 }
 
 .divInicio {
-    background-color: red;
-    height: 20vh;
-    width: 50vw;
-    align-items: center;
-    justify-content: center;
+    padding-left: 1rem;
+    color: black;
+    font-size: 3rem;
+}
+
+.textoInicio {
+    font-family: 'Secular One';
+    font-size: 3rem;
+}
+
+.botonInicio {
+    margin-left: 1rem;
+}
+
+.spanInicio {
+    font-family: 'Secular One';
+    color: white;
+    font-weight: bold;
+}
+
+.contenedorRedes {
+    font-size: 5rem;
+    padding: 1rem
+}
+
+.contenedorRedes:hover {
+    font-size: 10rem;
+}
+
+.iconoLinkedin:hover {
+    color: #0274B3;
+}
+
+.iconoGithub:hover {
+    color: black;
+}
+
+.iconoEmail:hover {
+    color: #AE1333;
 }
