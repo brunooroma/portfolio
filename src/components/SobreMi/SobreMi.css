@@ -7,6 +7,7 @@
 .fotoSobreMi {
     width: 25vw;
     height: auto;
+    border-radius: 10px;
 }
 
 .cardFotoSobreMi {
@@ -113,6 +114,6 @@
 
 @media (max-width: 991px) {
     .logoTecnologia {
-        margin-bottom: 1rem;
+        margin-bottom: 4rem;
     }
 }

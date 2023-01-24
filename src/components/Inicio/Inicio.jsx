@@ -1,7 +1,6 @@
 import "./Inicio.css";
 import 'animate.css';
 import { Button, Col, Container, Row } from "react-bootstrap";
-import fondo from "../../utils/img/fondoInicio.jpg";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -22,11 +21,6 @@ const Inicio = () => {
   return (
     <div
       className="contenedorGralInicio"
-      style={{
-        backgroundImage: `url(${fondo})`,
-        backgroundSize: "cover",
-        height: "95vh",
-      }}
     >
       <Container>
         <Row className="row justify-content-center align-items-center">
@@ -53,6 +47,7 @@ const Inicio = () => {
               <a
                 href="https://www.linkedin.com/in/brunoroma11/"
                 target="_blank"
+                rel="noreferrer"
                 style={estiloLinks}
               >
                 <FontAwesomeIcon
@@ -63,6 +58,7 @@ const Inicio = () => {
               <a
                 href="https://github.com/brunooroma"
                 target="_blank"
+                rel="noreferrer"
                 style={estiloLinks}
               >
                 <FontAwesomeIcon

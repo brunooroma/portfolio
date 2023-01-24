@@ -11,7 +11,12 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    color: white
+    color: white;
+    background: #003973; 
+    background: -webkit-linear-gradient(to right, #003973, #e5e5be);
+    background: linear-gradient(to right, #003973, #e5e5be);
+    background-size: cover;
+    height: 95vh;
 }
 
 .divInicio {

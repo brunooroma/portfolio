@@ -19,8 +19,8 @@ function App() {
               element={<SobreMi greeting={"Sobre Mi"} />}
             />
             <Route
-              path="/portfolio"
-              element={<Portfolio greeting={"Portfolio"} />}
+              path="/proyectos"
+              element={<Portfolio greeting={"Proyectos"} />}
             />
             <Route path="*" element={<h1>Pagina No Encontrada</h1>} />
           </Routes>

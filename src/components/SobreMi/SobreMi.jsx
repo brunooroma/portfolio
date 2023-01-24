@@ -1,6 +1,6 @@
 import "./SobreMi.css";
 import { useState } from "react";
-import fotoPerfil from "../../utils/img/FotoCV.jpg";
+import fotoPerfil from "../../utils/img/fotoSobreMi.jpeg";
 import { Card, Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -17,6 +17,8 @@ import {
 import { Button } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
+import Tooltip from 'react-bootstrap/Tooltip';
 
 const SobreMi = ({ greeting }) => {
   let estiloLinks = {
@@ -90,6 +92,7 @@ const SobreMi = ({ greeting }) => {
                   <a
                     href="https://www.linkedin.com/in/brunoroma11/"
                     target="_blank"
+                    rel="noreferrer"
                     style={estiloLinks}
                   >
                     <FontAwesomeIcon
@@ -100,6 +103,7 @@ const SobreMi = ({ greeting }) => {
                   <a
                     href="https://github.com/brunooroma"
                     target="_blank"
+                    rel="noreferrer"
                     style={estiloLinks}
                   >
                     <FontAwesomeIcon
@@ -133,52 +137,133 @@ const SobreMi = ({ greeting }) => {
             <Col className="col-12 col-sm-0 col-lg-1"></Col>
             <Col className="col-12 col-sm-0 col-lg-1"></Col>
             <Col className="col-6 col-sm-4 col-lg-1">
-              <FontAwesomeIcon
+            <OverlayTrigger
+          key='bottom'
+          placement='bottom'
+          overlay={
+            <Tooltip id='tooltip-bottom'>
+              <strong>HTML5</strong>
+            </Tooltip>
+          }
+        >
+                 <FontAwesomeIcon
                 icon={faHtml5}
                 className="logoTecnologia logoHtml"
               />
+        </OverlayTrigger>
+ 
             </Col>
             <Col className="col-6 col-sm-4 col-lg-1">
+            <OverlayTrigger
+          key='bottom'
+          placement='bottom'
+          overlay={
+            <Tooltip id='tooltip-bottom'>
+              <strong>CSS3</strong>
+            </Tooltip>
+          }
+        >
               <FontAwesomeIcon
                 icon={faCss3}
                 className="logoTecnologia logoCss"
               />
+        </OverlayTrigger>
             </Col>
             <Col className="col-6 col-sm-4 col-lg-1">
+            <OverlayTrigger
+          key='bottom'
+          placement='bottom'
+          overlay={
+            <Tooltip id='tooltip-bottom'>
+              <strong>Javascript</strong>
+            </Tooltip>
+          }
+        >
               <FontAwesomeIcon
                 icon={faSquareJs}
                 className="logoTecnologia logoJs"
               />
+        </OverlayTrigger>
             </Col>
             <Col className="col-6 col-sm-4 col-lg-1">
+            <OverlayTrigger
+          key='bottom'
+          placement='bottom'
+          overlay={
+            <Tooltip id='tooltip-bottom'>
+              <strong>React</strong>
+            </Tooltip>
+          }
+        >
               <FontAwesomeIcon
                 icon={faReact}
                 className="logoTecnologia logoReact"
               />
+        </OverlayTrigger>
             </Col>
             <Col className="col-6 col-sm-4 col-lg-1">
+            <OverlayTrigger
+          key='bottom'
+          placement='bottom'
+          overlay={
+            <Tooltip id='tooltip-bottom'>
+              <strong>Angular</strong>
+            </Tooltip>
+          }
+        >
               <FontAwesomeIcon
                 icon={faAngular}
                 className="logoTecnologia logoAngular"
               />
+        </OverlayTrigger>
             </Col>
             <Col className="col-6 col-sm-4 col-lg-1">
+            <OverlayTrigger
+          key='bottom'
+          placement='bottom'
+          overlay={
+            <Tooltip id='tooltip-bottom'>
+              <strong>Bootstrap</strong>
+            </Tooltip>
+          }
+        >
               <FontAwesomeIcon
                 icon={faBootstrap}
                 className="logoTecnologia logoBootstrap"
               />
+        </OverlayTrigger>
             </Col>
             <Col className="col-6 col-sm-4 col-lg-1">
+            <OverlayTrigger
+          key='bottom'
+          placement='bottom'
+          overlay={
+            <Tooltip id='tooltip-bottom'>
+              <strong>Git</strong>
+            </Tooltip>
+          }
+        >
               <FontAwesomeIcon
                 icon={faGitAlt}
                 className="logoTecnologia logoGit"
               />
+        </OverlayTrigger>
             </Col>
             <Col className="col-6 col-sm-4 col-lg-1">
+            <OverlayTrigger
+          key='bottom'
+          placement='bottom'
+          overlay={
+            <Tooltip id='tooltip-bottom'>
+              <strong>Github</strong>
+            </Tooltip>
+          }
+        >
               <FontAwesomeIcon
                 icon={faGithub}
                 className="logoTecnologia logoGithub"
               />
+        </OverlayTrigger>
             </Col>
             <Col className="col-12 col-sm-0 col-lg-1"></Col>
             <Col className="col-12 col-sm-0 col-lg-1"></Col>

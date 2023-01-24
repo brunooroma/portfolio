@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import './NavBar.css'
 
 const NavBar = () => {
-  const secciones = ["Sobre Mi", "Portfolio"];
+  const secciones = ["Sobre Mi", "Proyectos"];
 
   const [isOpen, setIsOpen] = useState(false);
 
