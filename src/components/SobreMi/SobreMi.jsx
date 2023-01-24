@@ -1,11 +1,22 @@
 import "./SobreMi.css";
+import { useState } from "react";
 import fotoPerfil from "../../utils/img/FotoCV.jpg";
 import { Card, Container, Row, Col } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faHtml5, faCss3, faSquareJs, faReact, faAngular, faGitAlt, faGithub, faBootstrap } from "@fortawesome/free-brands-svg-icons";
+import { faHtml5, faCss3, faSquareJs, faReact, faAngular, faGitAlt, faGithub, faBootstrap, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { Button } from "react-bootstrap";
+import Modal from 'react-bootstrap/Modal';
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 const SobreMi = ({ greeting }) => {
+
+  let estiloLinks = {
+    color: "black",
+    textDecoration: "none",
+    paddingLeft: "1rem",
+  };
+
+  const [show, setShow] = useState(false);
 
   return (
     <div
@@ -37,9 +48,51 @@ const SobreMi = ({ greeting }) => {
                   reales que se presentan en el dia a dia
                 </p>
               </div>
-              <Button variant="dark" size="lg" className="boton">
+              <Button variant="dark" size="lg" className="boton botonSobreMi" onClick={() => setShow(true)}>
                 Contactarme
               </Button>
+              <Modal
+        show={show}
+        onHide={() => setShow(false)}
+        dialogClassName="modal-90w"
+        aria-labelledby="example-custom-modal-styling-title"
+      >
+        <Modal.Header closeButton>
+          <Modal.Title id="example-custom-modal-styling-title">
+            Medios de Contacto
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+        <div>
+              <a
+                href="https://www.linkedin.com/in/brunoroma11/"
+                target="_blank"
+                style={estiloLinks}
+              >
+                <FontAwesomeIcon
+                  className="contenedorRedesModal iconoLinkedin"
+                  icon={faLinkedin}
+                />
+              </a>
+              <a
+                href="https://github.com/brunooroma"
+                target="_blank"
+                style={estiloLinks}
+              >
+                <FontAwesomeIcon
+                  className="contenedorRedesModal iconoGithub"
+                  icon={faGithub}
+                />
+              </a>
+              <a href="mailto:brunoo.roma@gmail.com" style={estiloLinks}>
+                <FontAwesomeIcon
+                  className="contenedorRedesModal iconoEmail"
+                  icon={faEnvelope}
+                />
+              </a>
+            </div>
+        </Modal.Body>
+      </Modal>
             </Col>
           </Row>
         </Container>

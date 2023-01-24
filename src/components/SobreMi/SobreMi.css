@@ -60,3 +60,16 @@
     transform: scale(1.5);
     color: #5e5d5d
 }
+
+.contenedorRedesModal {
+    font-size: 5rem;
+    padding: 1rem
+}
+
+.contenedorRedesModal:hover {
+    transform: scale(1.5);
+}
+
+.botonSobreMi {
+    font-weight: bold;
+}

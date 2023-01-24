@@ -1,4 +1,9 @@
-.logoRedireccion:hover {
+.contenedorTarjeta:hover .logoRedireccion  {
     transform: scale(2);
-    color: #212529
+    color: #260B36
+}
+
+.contenedorTarjeta:hover{
+    background: -webkit-linear-gradient(to left, #240b36, #c31432);  
+    background: linear-gradient(to left, #240b36, #c31432); 
 }

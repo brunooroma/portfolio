@@ -5,7 +5,7 @@ import dataProyectos from '../Data/data.js'
 import { Container } from 'react-bootstrap';
 
 const Portfolio = ({greeting}) => {
-  const [proyectos, setProyectos] = useState([]); // Inicializando el estado
+  const [proyectos, setProyectos] = useState([]);
 
   useEffect(() => {
       setProyectos(dataProyectos);

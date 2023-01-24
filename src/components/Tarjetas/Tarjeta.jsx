@@ -27,7 +27,7 @@ const Tarjeta = ({ info }) => {
           {chunk.map((proyecto) => (
             <Col key={proyecto.id} sm={6}>
               <div className="mb-3 text-center">
-                <Card className="my-2">
+                <Card className="my-2 contenedorTarjeta">
                   <CardImg
                     alt={proyecto.titulo}
                     src={proyecto.imagen}
@@ -37,7 +37,6 @@ const Tarjeta = ({ info }) => {
                       margin: "1rem",
                       border: "0.2rem solid black",
                     }}
-                    top
                   />
                   <CardBody>
                     <CardTitle
