@@ -2,21 +2,21 @@ const dataProyectos = [
     {
         id: 1,
         titulo: 'DC GYM',
-        imagen: '/static/miniaturaDCGym.png',
+        imagen: '/static/mindcgym.png',
         url: 'https://brunooroma.github.io/dcgym/',
         descripcion: 'Sitio Web estatico de un Gimnasio, utilizando HTML, CSS y Bootstrap'
     },
     {
         id: 2,
         titulo: 'Sistema de Turnos',
-        imagen: '/static/miniaturaFichasMedicas.png',
+        imagen: '/static/miniaturafichasmedicas.png',
         url: 'https://brunooroma.github.io/fichasMedicas/',
         descripcion: 'ABM diseñado con Javascript Vanilla, en el cual se pueden agendar turnos'
     },
     {
         id: 3,
         titulo: 'Poke E-commerce',
-        imagen: '/static/miniaturaPokeCommerce.png',
+        imagen: '/static/miniaturapokecommerce.png',
         url: 'https://pokeecommerce.netlify.app/',
         descripcion: 'E-commerce diseñado con React'
     }
