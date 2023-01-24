@@ -27,12 +27,12 @@ const Tarjeta = ({ info }) => {
           {chunk.map((proyecto) => (
             <Col key={proyecto.id} sm={6}>
               <div className="mb-3 text-center">
-                <Card className="my-2 contenedorTarjeta">
+                <Card className="contenedorTarjeta">
                   <CardImg
                     alt={proyecto.titulo}
                     src={proyecto.imagen}
                     style={{
-                      height: "20rem",
+                      height: "15rem",
                       width: "80%",
                       margin: "1rem",
                       border: "0.2rem solid black",

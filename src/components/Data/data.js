@@ -11,7 +11,7 @@ const dataProyectos = [
         titulo: 'Sistema de Turnos',
         imagen: '/static/miniaturaFichasMedicas.png',
         url: 'https://brunooroma.github.io/fichasMedicas/',
-        descripcion: 'ABM diseñado con Javascript Vanilla, en el cual se pueden agendar turnos medicos'
+        descripcion: 'ABM diseñado con Javascript Vanilla, en el cual se pueden agendar turnos'
     },
     {
         id: 3,
