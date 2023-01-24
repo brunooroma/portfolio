@@ -4,7 +4,7 @@
 }
 
 body {
-        background-color: rgb(33,37,41);
+    background-color: rgb(33,37,41);
 }
 
 .contenedorGralInicio {
@@ -41,7 +41,7 @@ body {
 }
 
 .contenedorRedes:hover {
-    font-size: 10rem;
+    transform: scale(2);
 }
 
 .iconoLinkedin:hover {
@@ -54,4 +54,8 @@ body {
 
 .iconoEmail:hover {
     color: #AE1333;
+}
+
+.boton:hover {
+    border: 2px solid white;
 }

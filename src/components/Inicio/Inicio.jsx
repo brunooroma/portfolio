@@ -13,23 +13,22 @@ const Inicio = () => {
   };
 
   let estiloLinks = {
-    color: 'white',
+    color: "white",
     textDecoration: "none",
-  }
+    paddingLeft: "1rem",
+  };
 
   return (
-    
-      
-        <div
-          className="contenedorGralInicio"
-          style={{
-            backgroundImage: `url(${fondo})`,
-            backgroundSize: "cover",
-            height: "95vh",
-          }}
-        >
-          <Container >
-          <Row className="row justify-content-center align-items-center">
+    <div
+      className="contenedorGralInicio"
+      style={{
+        backgroundImage: `url(${fondo})`,
+        backgroundSize: "cover",
+        height: "95vh",
+      }}
+    >
+      <Container>
+        <Row className="row justify-content-center align-items-center">
           <Col className="col-12 col-sm-12 col-lg-8">
             <div>
               <div className="divInicio">
@@ -42,7 +41,7 @@ const Inicio = () => {
                 </p>
               </div>
 
-              <Button variant="dark" size="lg" className="botonInicio">
+              <Button variant="dark" size="lg" className="botonInicio boton">
                 <NavLink to={`/sobremi`} style={estiloBoton}>
                   Mas sobre mi
                 </NavLink>
@@ -51,15 +50,37 @@ const Inicio = () => {
           </Col>
           <Col className="col-12 col-sm-12 col-lg-4">
             <div>
-              <a href="https://www.linkedin.com/in/brunoroma11/" target='_blank' style={estiloLinks}><FontAwesomeIcon className="contenedorRedes iconoLinkedin" icon={faLinkedin} /></a>
-              <a href="https://github.com/brunooroma" target='_blank' style={estiloLinks}><FontAwesomeIcon className="contenedorRedes iconoGithub" icon={faGithub} /></a>
-              <a href="mailto:brunoo.roma@gmail.com" style={estiloLinks}><FontAwesomeIcon className="contenedorRedes iconoEmail" icon={faEnvelope} /></a>
+              <a
+                href="https://www.linkedin.com/in/brunoroma11/"
+                target="_blank"
+                style={estiloLinks}
+              >
+                <FontAwesomeIcon
+                  className="contenedorRedes iconoLinkedin"
+                  icon={faLinkedin}
+                />
+              </a>
+              <a
+                href="https://github.com/brunooroma"
+                target="_blank"
+                style={estiloLinks}
+              >
+                <FontAwesomeIcon
+                  className="contenedorRedes iconoGithub"
+                  icon={faGithub}
+                />
+              </a>
+              <a href="mailto:brunoo.roma@gmail.com" style={estiloLinks}>
+                <FontAwesomeIcon
+                  className="contenedorRedes iconoEmail"
+                  icon={faEnvelope}
+                />
+              </a>
             </div>
           </Col>
-          </Row>
-    </Container>
-        </div>
-
+        </Row>
+      </Container>
+    </div>
   );
 };
 

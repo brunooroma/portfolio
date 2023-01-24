@@ -1,6 +1,9 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Card, Col, Row, Container } from "react-bootstrap";
 import { CardBody, CardTitle, CardText, CardImg } from "reactstrap";
+import { faSquareUpRight } from "@fortawesome/free-solid-svg-icons";
+import './Tarjeta.css'
 
 const Tarjeta = ({ info }) => {
   const chunk = (arr, size) => {
@@ -32,29 +35,43 @@ const Tarjeta = ({ info }) => {
                       height: "20rem",
                       width: "80%",
                       margin: "1rem",
-                      border: "0.5rem solid black",
+                      border: "0.2rem solid black",
                     }}
                     top
                   />
                   <CardBody>
-                    <CardTitle tag="h1"
+                    <CardTitle
+                      tag="h3"
+                      style={{
+                        fontWeight: "bold"
+                      }}
+                    >
+                      {proyecto.titulo}
+                    </CardTitle>
+                    <CardText
                     style={{
-                        fontWeight: 'bold'
-                    }}>{proyecto.titulo}</CardTitle>
-                    <a href={proyecto.url}
-                    target='_blank'
-                    rel="noreferrer"
-                    style={{
-                        textDecoration: 'none',
-                        color: 'black',
-                        fontSize: '1.2rem'
+                      fontSize: '1.2rem'
                     }}>
-                      <CardText>{proyecto.url}</CardText>
-                    </a>
-                    <CardText>
-                      <small className="descripcion">
-                        Descripcion del proyecto
+                      <small>
+                        {proyecto.descripcion}
                       </small>
+                    </CardText>
+                    <CardText>
+                      <a
+                        href={proyecto.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{
+                          textDecoration: 'none',
+                          color: 'white',
+                          fontSize: '2rem'
+                        }}
+                      >
+                        <FontAwesomeIcon
+                        className="logoRedireccion"
+                          icon={faSquareUpRight}
+                        />
+                      </a>
                     </CardText>
                   </CardBody>
                 </Card>

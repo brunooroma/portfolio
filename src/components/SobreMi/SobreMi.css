@@ -7,7 +7,7 @@
 .card {
     align-items: center;
     justify-content: center;
-    background-color: rgb(199, 59, 59);
+    background-color: #BF1432;
     -webkit-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.8);
     -moz-box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.8);
     box-shadow: 2px 2px 10px 0px rgba(0,0,0,0.8);
@@ -17,8 +17,46 @@
     color: white;
 }
 
-.logos {
-    height: 6rem;
-    width: auto;
-    border-radius: 50%;
+.logoTecnologia {
+    font-size: 4rem;
+}
+
+.logoHtml:hover {
+    transform: scale(1.5);
+    color: #E96228
+}
+
+.logoCss:hover {
+    transform: scale(1.5);
+    color: #2862E9
+}
+
+.logoJs:hover {
+    transform: scale(1.5);
+    color: #EFD81D
+}
+
+.logoReact:hover {
+    transform: scale(1.5);
+    color: #53D1F3
+}
+
+.logoAngular:hover {
+    transform: scale(1.5);
+    color: #D7002F
+}
+
+.logoBootstrap:hover {
+    transform: scale(1.5);
+    color: #8411F6
+}
+
+.logoGit:hover {
+    transform: scale(1.5);
+    color: #E84D31
+}
+
+.logoGithub:hover {
+    transform: scale(1.5);
+    color: #5e5d5d
 }

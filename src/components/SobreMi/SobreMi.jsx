@@ -1,14 +1,11 @@
 import "./SobreMi.css";
 import fotoPerfil from "../../utils/img/FotoCV.jpg";
 import { Card, Container, Row, Col } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
-import Button from "react-bootstrap/Button";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faHtml5, faCss3, faSquareJs, faReact, faAngular, faGitAlt, faGithub, faBootstrap } from "@fortawesome/free-brands-svg-icons";
+import { Button } from "react-bootstrap";
 
 const SobreMi = ({ greeting }) => {
-  let estiloBoton = {
-    textDecoration: "none",
-    color: "white",
-  };
 
   return (
     <div
@@ -39,12 +36,10 @@ const SobreMi = ({ greeting }) => {
                   Me gustaria poder aportar soluciones digitales a problemas
                   reales que se presentan en el dia a dia
                 </p>
-                <Button variant="dark" size="lg">
-                  <NavLink to={`/contacto`} style={estiloBoton}>
-                    Contactarme
-                  </NavLink>
-                </Button>
               </div>
+              <Button variant="dark" size="lg" className="boton">
+                Contactarme
+              </Button>
             </Col>
           </Row>
         </Container>
@@ -53,72 +48,47 @@ const SobreMi = ({ greeting }) => {
         className="text-center"
         style={{
           color: "white",
+          marginBottom: '4rem'
         }}
       >
-        <h2 className="mt-5">Tecnologias</h2>
+        <h1 className="m-5">Tecnologias</h1>
         <Container>
-          <Row className="row mb-2">
-            <Col>
-              <img
-                src="/static/logoHTML.png"
-                alt="Logo HTML5"
-                className="col-sm-6 col-md-6 col-lg-6 col-xl-6 logos"
-              />
+          <Row className="row">
+          <Col className="col-12 col-sm-0 col-lg-1">
+            
             </Col>
-            <Col>
-              <img
-                src="/static/logoCSS.png"
-                alt="Logo CCS3"
-                className="col-sm-6 col-md-6 col-lg-6 col-xl-6 logos"
-              />
+            <Col className="col-12 col-sm-0 col-lg-1">
+           
             </Col>
-          </Row>
-          <Row className="row mb-2">
-            <Col>
-              <img
-                src="/static/logoJS.png"
-                alt="Logo JS"
-                className="col-sm-6 col-md-6 col-lg-6 col-xl-6 logos"
-              />
+            <Col className="col-6 col-sm-4 col-lg-1">
+            <FontAwesomeIcon icon={faHtml5} className="logoTecnologia logoHtml" />
             </Col>
-            <Col>
-              <img
-                src="/static/logoReact.jpg"
-                alt="Logo React"
-                className="col-sm-6 col-md-6 col-lg-6 col-xl-6 logos"
-              />
+            <Col className="col-6 col-sm-4 col-lg-1">
+            <FontAwesomeIcon icon={faCss3} className="logoTecnologia logoCss" />
             </Col>
-          </Row>
-          <Row className="row mb-2">
-            <Col>
-              <img
-                src="/static/logoAngular.png"
-                alt="Logo Angular"
-                className="col-sm-6 col-md-6 col-lg-6 col-xl-6 logos"
-              />
+            <Col className="col-6 col-sm-4 col-lg-1">
+            <FontAwesomeIcon icon={faSquareJs} className="logoTecnologia logoJs" />
             </Col>
-            <Col>
-              <img
-                src="/static/logoBootstrap.png"
-                alt="Logo Bootstrap"
-                className="col-sm-6 col-md-6 col-lg-6 col-xl-6 logos"
-              />
+            <Col className="col-6 col-sm-4 col-lg-1">
+            <FontAwesomeIcon icon={faReact} className="logoTecnologia logoReact" />
             </Col>
-          </Row>
-          <Row className="row mb-2">
-            <Col>
-              <img
-                src="/static/logoGit.png"
-                alt="Logo Git"
-                className="col-sm-6 col-md-6 col-lg-6 col-xl-6 logos"
-              />
+            <Col className="col-6 col-sm-4 col-lg-1">
+            <FontAwesomeIcon icon={faAngular} className="logoTecnologia logoAngular" />
             </Col>
-            <Col>
-              <img
-                src="/static/logoGithub.png"
-                alt="Logo Github"
-                className="col-sm-6 col-md-6 col-lg-6 col-xl-6 logos"
-              />
+            <Col className="col-6 col-sm-4 col-lg-1">
+            <FontAwesomeIcon icon={faBootstrap} className="logoTecnologia logoBootstrap" />
+            </Col>
+            <Col className="col-6 col-sm-4 col-lg-1">
+            <FontAwesomeIcon icon={faGitAlt} className="logoTecnologia logoGit" />
+            </Col>
+            <Col className="col-6 col-sm-4 col-lg-1">
+            <FontAwesomeIcon icon={faGithub} className="logoTecnologia logoGithub" />
+            </Col>
+            <Col className="col-12 col-sm-0 col-lg-1">
+            
+            </Col>
+            <Col className="col-12 col-sm-0 col-lg-1">
+           
             </Col>
           </Row>
         </Container>
