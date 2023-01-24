@@ -15,3 +15,8 @@ h1 {
 .navLink:hover {
     color: #C21432;
 }
+
+.botonMenuHamburguesa {
+    border: 2px solid white;
+    color: white
+}

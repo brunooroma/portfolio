@@ -14,7 +14,7 @@ const NavBar = () => {
   return (
     <Navbar color="dark" light expand="md" className="contenedor">
       <NavLink to={"/"} className='navLink'><h1>BrunoR Dev</h1></NavLink>
-      <NavbarToggler onClick={toggle} />
+    <NavbarToggler onClick={toggle} className='botonMenuHamburguesa'/>
       <Collapse isOpen={isOpen} navbar className="justify-content-md-end">
         <Nav className="ml-auto" navbar>
           <NavItem>

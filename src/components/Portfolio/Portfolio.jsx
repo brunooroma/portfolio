@@ -13,7 +13,7 @@ const Portfolio = ({greeting}) => {
 
   return (
     <Container>
-      <div><h1>{greeting}</h1>
+      <div><h1 className='tituloPortfolio'>{greeting}</h1>
       </div>
     <Tarjeta info={proyectos}/>
     </Container>

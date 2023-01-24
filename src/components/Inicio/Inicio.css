@@ -58,5 +58,17 @@ body {
 }
 
 .boton:hover {
-    border: 2px solid white;
+    border: 1px solid white;
+}
+
+@media (max-width: 400px) {
+    .contenedorRedes {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 990px) {
+    .contenedorRedes {
+        margin-top: 2rem;
+    }
 }

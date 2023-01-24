@@ -35,13 +35,12 @@ const Inicio = () => {
               <div className="divInicio">
                 <p className="textoInicio">
                   Hola, mi nombre es{" "}
-                  <span className="spanInicio animate__animated animate__bounceIn animate__delay-0.5s">Bruno Roma</span>
+                  <span className="spanInicio animate__animated animate__bounceIn animate__delay-0.6s">Bruno Roma</span>
                 </p>
                 <p className="textoInicio animate__animated animate__jackInTheBox animate__delay-1s">
                   <span className="spanInicio">Soy</span> FrontEnd Developer
                 </p>
               </div>
-
               <Button variant="dark" size="lg" className="botonInicio boton">
                 <NavLink to={`/sobremi`} style={estiloBoton}>
                   Mas sobre mi

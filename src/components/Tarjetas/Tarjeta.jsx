@@ -21,7 +21,7 @@ const Tarjeta = ({ info }) => {
   const chunks = chunk(info, 2);
 
   return (
-    <Container fluid="md">
+    <Container fluid="md" className="contenedorPrueba">
       {chunks.map((chunk, idx) => (
         <Row key={idx} className="justify-content-md-center">
           {chunk.map((proyecto) => (

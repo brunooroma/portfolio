@@ -38,9 +38,7 @@ const SobreMi = ({ greeting }) => {
       <Container className="cardSobreMi">
         <Row className="row justify-content-center align-items-center">
           <Col className="col-12 col-sm-12 col-lg-6">
-            <Card style={{ width: "80%", marginLeft: '2rem'}}>
               <Card.Img src={fotoPerfil} className="fotoSobreMi" />
-            </Card>
           </Col>
           <Col className="col-12 col-sm-12 col-lg-6">
             <div className="divDescripcion">
@@ -82,7 +80,9 @@ const SobreMi = ({ greeting }) => {
             >
               <Modal.Header closeButton>
                 <Modal.Title id="example-custom-modal-styling-title">
-                  Medios de Contacto
+                  <h2 style={{
+                    fontWeight: 'bold'
+                  }}>Medios de Contacto</h2>
                 </Modal.Title>
               </Modal.Header>
               <Modal.Body>
