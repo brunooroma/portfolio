@@ -9,14 +9,14 @@ const dataProyectos = [
     {
         id: 2,
         titulo: 'Sistema de Turnos',
-        imagen: '/static/miniaturafichasmedicas.png',
+        imagen: '/static/minfichasmedicas.png',
         url: 'https://brunooroma.github.io/fichasMedicas/',
         descripcion: 'ABM diseñado con Javascript Vanilla, en el cual se pueden agendar turnos'
     },
     {
         id: 3,
         titulo: 'Poke E-commerce',
-        imagen: '/static/miniaturapokecommerce.png',
+        imagen: '/static/minpokecommerce.png',
         url: 'https://pokeecommerce.netlify.app/',
         descripcion: 'E-commerce diseñado con React'
     }
