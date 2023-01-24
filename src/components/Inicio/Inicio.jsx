@@ -1,6 +1,7 @@
+import "./Inicio.css";
+import 'animate.css';
 import { Button, Col, Container, Row } from "react-bootstrap";
 import fondo from "../../utils/img/fondoInicio.jpg";
-import "./Inicio.css";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -34,9 +35,9 @@ const Inicio = () => {
               <div className="divInicio">
                 <p className="textoInicio">
                   Hola, mi nombre es{" "}
-                  <span className="spanInicio">Bruno Roma</span>
+                  <span className="spanInicio animate__animated animate__bounceIn animate__delay-0.5s">Bruno Roma</span>
                 </p>
-                <p className="textoInicio">
+                <p className="textoInicio animate__animated animate__jackInTheBox animate__delay-1s">
                   <span className="spanInicio">Soy</span> FrontEnd Developer
                 </p>
               </div>
