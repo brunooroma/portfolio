@@ -35,7 +35,7 @@ const Tarjeta = ({ info }) => {
                       height: "15rem",
                       width: "80%",
                       margin: "1rem",
-                      border: "0.2rem solid black",
+                      border: "2px solid white",
                     }}
                   />
                   <CardBody>

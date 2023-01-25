@@ -13,6 +13,8 @@ import {
   faGithub,
   faBootstrap,
   faLinkedin,
+  faNodeJs,
+  faSass
 } from "@fortawesome/free-brands-svg-icons";
 import { Button } from "react-bootstrap";
 import Modal from "react-bootstrap/Modal";
@@ -44,26 +46,21 @@ const SobreMi = ({ greeting }) => {
           </Col>
           <Col className="col-12 col-sm-12 col-lg-6">
             <div className="divDescripcion">
+
               <p>
-                Soy Desarrollador Frontend buscando experiencia en el desarrollo
-                de aplicaciones web
+              Hola! Soy Bruno, un gusto que hayas llegado a mi portfolio! 
+              </p>
+              <p>Espero que el próximo extracto te ayude a conocerme un poco mas y a entender mi objetivo actual</p>
+              <p>
+              Tengo más de 10 años de experiencia en el campo laboral, de los cuales los últimos años han sido relacionas al rubro de sistemas. Actualmente, estoy buscando mi primer trabajo como desarrollador front-end, de preferencia React pero no es un limitante esto</p>
+              <p>
+              Mi experiencia como analista funcional me ha dado una comprensión sólida de las metodologías ágiles, utilizando herramientas como Trello, OsTicket o Jira para la organización de tareas </p>
+              <p>Sobre mi stack tecnológico te puedo comentar que es HTML, CSS, JavaScript, React, Angular, Git (GitHub) y obviamente no puede faltar nuestro amigo Bootstrap, todo esto lo aprendí tanto con los cursos realizados en CoderHouse como tambien con capacitaciones de forma autodidacta
               </p>
               <p>
-                Manejo tecnologías como HTML, CSS, JavaScript, React, Angular,
-                Git, GitHub y Bootstrap
-              </p>
-              <p>
-                Me apasiona el desarrollo de aplicaciones web y siempre estoy
-                buscando aprender y aplicar nuevas tecnologías
-              </p>
-              <p>
-                Tengo muchas ganas de formar parte de un grupo de trabajo en
-                donde tenga que enfrentarme a nuevos desafios y pueda aprender
-                de desarrolladores con mas experiencia
-              </p>
-              <p>
-                Me gustaria poder aportar soluciones a problemas reales que se
-                presentan en el dia a dia
+              Mi experiencia en el desarrollo de páginas web no solo es como front-end, sino que también tengo nociones de backend y estoy dispuesto a aprender más aun</p>
+              <p> 
+              Estoy seguro de que el equipo de desarrollo que me de esa oportunidad que busco no se va a arrepentir, ya que estoy con muchas ganas y muy emocionado de poder aplicar mi experiencia y mis habilidades en mi próximo desafio profesional, como asi tambien aprender de ellos cosas nuevas y a mejorar lo que ya se
               </p>
             </div>
             <Button
@@ -134,7 +131,6 @@ const SobreMi = ({ greeting }) => {
         <h1 className="m-5">Tecnologias</h1>
         <Container>
           <Row className="row">
-            <Col className="col-12 col-sm-0 col-lg-1"></Col>
             <Col className="col-12 col-sm-0 col-lg-1"></Col>
             <Col className="col-6 col-sm-4 col-lg-1">
             <OverlayTrigger
@@ -265,7 +261,38 @@ const SobreMi = ({ greeting }) => {
               />
         </OverlayTrigger>
             </Col>
-            <Col className="col-12 col-sm-0 col-lg-1"></Col>
+            <Col className="col-6 col-sm-4 col-lg-1">
+            <OverlayTrigger
+          key='bottom'
+          placement='bottom'
+          overlay={
+            <Tooltip id='tooltip-bottom'>
+              <strong>NodeJS</strong>
+            </Tooltip>
+          }
+        >
+              <FontAwesomeIcon
+                icon={faNodeJs}
+                className="logoTecnologia logoNodeJS"
+              />
+        </OverlayTrigger>
+            </Col>
+            <Col className="col-6 col-sm-4 col-lg-1">
+            <OverlayTrigger
+          key='bottom'
+          placement='bottom'
+          overlay={
+            <Tooltip id='tooltip-bottom'>
+              <strong>Sass</strong>
+            </Tooltip>
+          }
+        >
+              <FontAwesomeIcon
+                icon={faSass}
+                className="logoTecnologia logoSass"
+              />
+        </OverlayTrigger>
+            </Col>
             <Col className="col-12 col-sm-0 col-lg-1"></Col>
           </Row>
         </Container>

@@ -15,6 +15,10 @@ function App() {
           <Routes>
             <Route path="/" element={<Inicio />} />
             <Route
+              path="/inicio"
+              element={<Inicio />}
+            />
+            <Route
               path="/sobremi"
               element={<SobreMi greeting={"Sobre Mi"} />}
             />

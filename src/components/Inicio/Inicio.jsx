@@ -1,10 +1,13 @@
 import "./Inicio.css";
-import 'animate.css';
+import "animate.css";
+import { useEffect } from "react";
 import { Button, Col, Container, Row } from "react-bootstrap";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import ClipboardJS from "clipboard";
+import Swal from 'sweetalert2'
 
 const Inicio = () => {
   let estiloBoton = {
@@ -18,10 +21,26 @@ const Inicio = () => {
     paddingLeft: "1rem",
   };
 
+  const correoCopiado = () => {
+    Swal.fire({
+      title: 'Correo Electronico Copiado',
+      text: 'brunoo.roma@gmail.com',
+      confirmButtonColor: '#053D74',
+      showClass: {
+        popup: 'animate__animated animate__fadeInDown'
+      },
+      hideClass: {
+        popup: 'animate__animated animate__fadeOutUp'
+      }
+    })
+  }
+
+  useEffect(() => {
+    new ClipboardJS(".copy-link");
+  }, []);
+
   return (
-    <div
-      className="contenedorGralInicio"
-    >
+    <div className="contenedorGralInicio">
       <Container>
         <Row className="row justify-content-center align-items-center">
           <Col className="col-12 col-sm-12 col-lg-8">
@@ -29,10 +48,12 @@ const Inicio = () => {
               <div className="divInicio">
                 <p className="textoInicio">
                   Hola, mi nombre es{" "}
-                  <span className="spanInicio animate__animated animate__bounceIn animate__delay-0.6s">Bruno Roma</span>
+                  <span className="spanInicio animate__animated animate__bounceIn animate__delay-0.6s">
+                    Bruno Roma
+                  </span>
                 </p>
                 <p className="textoInicio animate__animated animate__jackInTheBox animate__delay-1s">
-                  <span className="spanInicio">Soy</span> FrontEnd Developer
+                  Soy <span className="spanInicio">FrontEnd Developer</span>
                 </p>
               </div>
               <Button variant="dark" size="lg" className="botonInicio boton">
@@ -66,7 +87,13 @@ const Inicio = () => {
                   icon={faGithub}
                 />
               </a>
-              <a href="mailto:brunoo.roma@gmail.com" style={estiloLinks}>
+              <a
+                onClick={correoCopiado}
+                href="#"
+                className="copy-link"
+                style={estiloLinks}
+                data-clipboard-text="brunoo.roma@gmail.com"
+              >
                 <FontAwesomeIcon
                   className="contenedorRedes iconoEmail"
                   icon={faEnvelope}
