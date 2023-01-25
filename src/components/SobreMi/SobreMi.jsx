@@ -73,10 +73,9 @@ const SobreMi = ({ greeting }) => {
               </p>
               <p>
                 Tengo más de 10 años de experiencia en el campo laboral, de los
-                cuales los últimos años han sido relacionas al rubro de
+                cuales los últimos años han sido relacionados al rubro de
                 sistemas. Actualmente, estoy buscando mi primer trabajo como
-                desarrollador front-end, de preferencia React pero no es un
-                limitante esto
+                desarrollador front-end, de preferencia React pero esto no es excluyente
               </p>
               <p>
                 Mi experiencia como analista funcional me ha dado una
