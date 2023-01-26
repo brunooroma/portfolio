@@ -23,8 +23,14 @@ import OverlayTrigger from "react-bootstrap/OverlayTrigger";
 import Tooltip from "react-bootstrap/Tooltip";
 import ClipboardJS from "clipboard";
 import Swal from "sweetalert2";
+import { NavLink } from "react-router-dom";
 
 const SobreMi = ({ greeting }) => {
+  let estiloBoton = {
+    textDecoration: "none",
+    color: "white",
+  };
+
   let estiloLinks = {
     color: "black",
     textDecoration: "none",
@@ -111,6 +117,11 @@ const SobreMi = ({ greeting }) => {
             >
               Contactarme
             </Button>
+            <Button variant="dark" size="lg" className="botonInicio boton">
+                <NavLink to={`/proyectos`} style={estiloBoton}>
+                  Mis Proyectos
+                </NavLink>
+              </Button>
             <Modal
               show={show}
               onHide={() => setShow(false)}
