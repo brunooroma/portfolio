@@ -1,8 +1,6 @@
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import { Card, Col, Row, Container } from "react-bootstrap";
 import { CardBody, CardTitle, CardText, CardImg } from "reactstrap";
-import { faSquareUpRight } from "@fortawesome/free-solid-svg-icons";
 import './Tarjeta.css'
 
 const Tarjeta = ({ info }) => {
@@ -27,7 +25,17 @@ const Tarjeta = ({ info }) => {
           {chunk.map((proyecto) => (
             <Col key={proyecto.id} sm={6}>
               <div className="mb-3 text-center">
+              <a
+                        href={proyecto.url}
+                        target="_blank"
+                        rel="noreferrer"
+                        style={{
+                          textDecoration: 'none',
+                          color: 'white',
+                        }}
+                      >
                 <Card className="contenedorTarjeta">
+                
                   <CardImg
                     alt={proyecto.titulo}
                     src={proyecto.imagen}
@@ -37,7 +45,9 @@ const Tarjeta = ({ info }) => {
                       margin: "1rem",
                       border: "2px solid white",
                     }}
+                    className='imagenRedireccion'
                   />
+
                   <CardBody>
                     <CardTitle
                       tag="h3"
@@ -55,25 +65,10 @@ const Tarjeta = ({ info }) => {
                         {proyecto.descripcion}
                       </small>
                     </CardText>
-                    <CardText>
-                      <a
-                        href={proyecto.url}
-                        target="_blank"
-                        rel="noreferrer"
-                        style={{
-                          textDecoration: 'none',
-                          color: 'white',
-                          fontSize: '2rem'
-                        }}
-                      >
-                        <FontAwesomeIcon
-                        className="logoRedireccion"
-                          icon={faSquareUpRight}
-                        />
-                      </a>
-                    </CardText>
+
                   </CardBody>
                 </Card>
+                </a>
               </div>
             </Col>
           ))}

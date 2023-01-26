@@ -1,5 +1,5 @@
-.logoRedireccion:hover {
-    transform: scale(2);
+.contenedorTarjeta:hover .imagenRedireccion {
+    transform: scale(1.1);
     color: black
 }
 
