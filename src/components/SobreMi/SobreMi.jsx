@@ -117,11 +117,12 @@ const SobreMi = ({ greeting }) => {
             >
               Contactarme
             </Button>
-            <Button variant="dark" size="lg" className="botonInicio boton">
                 <NavLink to={`/proyectos`} style={estiloBoton}>
+                <Button variant="dark" size="lg" className="boton botonSobreMi">
                   Mis Proyectos
+                  </Button>
                 </NavLink>
-              </Button>
+              
             <Modal
               show={show}
               onHide={() => setShow(false)}

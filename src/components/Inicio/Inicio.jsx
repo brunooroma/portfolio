@@ -56,11 +56,13 @@ const Inicio = () => {
                   Soy <span className="spanInicio">FrontEnd Developer</span>
                 </p>
               </div>
-              <Button variant="dark" size="lg" className="botonInicio boton">
+              
                 <NavLink to={`/sobremi`} style={estiloBoton}>
+                <Button variant="dark" size="lg" className="botonInicio boton">
                   Mas sobre mi
+                  </Button>
                 </NavLink>
-              </Button>
+
             </div>
           </Col>
           <Col className="col-12 col-sm-12 col-lg-4">
