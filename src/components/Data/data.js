@@ -18,7 +18,14 @@ const dataProyectos = [
         titulo: 'Poke E-commerce',
         imagen: '/static/minpokecommerce.png',
         url: 'https://pokeecommerce.netlify.app/',
-        descripcion: 'E-commerce diseñado con React'
+        descripcion: 'E-commerce diseñado con React, utilizando Create-react-app y publicado en Netlify'
+    },
+    {
+        id: 4,
+        titulo: 'Crud Context App',
+        imagen: '/static/mincrudcontextapp.png',
+        url: 'https://brunooroma.github.io/crud-context-app/',
+        descripcion: 'CRUD de tareas, creado con ViteJS, utilizando useContext y useReducer, publicado en Github Pages'
     }
 ]
 
