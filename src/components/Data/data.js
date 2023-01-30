@@ -23,7 +23,7 @@ const dataProyectos = [
     {
         id: 4,
         titulo: 'Crud Context App',
-        imagen: '/static/mincrudcontextapp.png',
+        imagen: '/static/mincrud.png',
         url: 'https://brunooroma.github.io/crud-context-app/',
         descripcion: 'CRUD de tareas, creado con ViteJS, utilizando useContext y useReducer, publicado en Github Pages'
     }
