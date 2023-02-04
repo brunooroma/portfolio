@@ -1,5 +1,5 @@
 .contenedorTarjeta {
-    min-height: 75vh;
+    min-height: 40vh;
 }
 
 .contenedorTarjeta:hover .imagenRedireccion {
@@ -12,6 +12,12 @@
     background: #003973; 
     background: -webkit-linear-gradient(to right, #003973, #e5e5be);
     background: linear-gradient(to right, #003973, #e5e5be);
+}
+
+@media only screen and (min-width: 576px) {
+    .contenedorTarjeta {
+        min-height: 72vh;
+    }
 }
 
 @media only screen and (min-width: 719px) {
@@ -34,6 +40,6 @@
 
 @media only screen and (min-width: 1224px) {
     .contenedorTarjeta {
-        min-height: 50vh;
+        min-height: 55vh;
     }
 }
