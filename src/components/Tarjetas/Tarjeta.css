@@ -1,6 +1,10 @@
+.contenedorTarjeta {
+    min-height: 75vh;
+}
+
 .contenedorTarjeta:hover .imagenRedireccion {
     transform: scale(1.1);
-    color: black
+    color: black;
 }
 
 .contenedorTarjeta:hover{
@@ -8,4 +12,28 @@
     background: #003973; 
     background: -webkit-linear-gradient(to right, #003973, #e5e5be);
     background: linear-gradient(to right, #003973, #e5e5be);
+}
+
+@media only screen and (min-width: 719px) {
+    .contenedorTarjeta {
+        min-height: 80vh;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .contenedorTarjeta {
+        min-height: 65vh;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .contenedorTarjeta {
+        min-height: 58vh;
+    }
+}
+
+@media only screen and (min-width: 1224px) {
+    .contenedorTarjeta {
+        min-height: 50vh;
+    }
 }
