@@ -8,6 +8,14 @@ const dataProyectos = [
       "Proyecto creado con ViteJS, que utiliza la API de Rick and Morty para mostrar todos los personajes de la serie por paginas. Utilice useContext para el manejo de estados y ASYNC/AWAIT para llamar a la API. Publicado en Vercel ",
   },
   {
+    id: 6,
+    titulo: "Buscador API",
+    imagen: "/static/minbuscador.png",
+    url: "https://buscador-api.vercel.app/",
+    descripcion:
+      "Proyecto creado con ViteJS, hace el llamado a la API con fetch y en el buscador se filtran todos los campos. Publicado en Vercel ",
+  },
+  {
     id: 4,
     titulo: "Crud Context App",
     imagen: "/static/mincrud.png",
